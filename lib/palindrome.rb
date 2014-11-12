@@ -18,3 +18,45 @@ class Palindromes
   end
 
 end
+
+class String
+
+  def is_palindrome?
+    str_array = self.to_s.chars.to_a
+    str_length = str_array.length
+    i = 0
+
+    str_array.each do |char|
+    i += 1
+        if (char == str_array[str_length-i])
+            break true
+        else
+            break false
+        end
+
+    end
+
+  end
+
+end
+
+class Integer
+
+  def is_palindrome?
+    str_array = self.to_s.chars.to_a
+    str_length = str_array.length
+    i = 0
+
+    str_array.each do |char|
+    i += 1
+        if (char == str_array[str_length-i])
+            break true
+        else
+            break false
+        end
+
+    end
+
+  end
+
+end
